@@ -1,0 +1,69 @@
+body::-webkit-scrollbar {
+    display: none;   
+}
+body{
+    width: 300px;
+    height: 475px;
+    margin: 0;
+    background: linear-gradient(45deg, #ff1a1a, #002080);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gradeDeBotoes {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 75px);
+
+}
+
+.gradeDeBotoes > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.0);
+    color: white;
+}
+
+.gradeDeBotoes > button:hover {
+    background-color: rgba(245, 245, 245, 0.3);
+    color: rgba(56, 0, 0, 0.8);
+    font-size: 2.5rem;
+    transition-property: all;
+    transition-duration: 400ms;    
+}
+
+.doisEspacos{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-bottom: 2px solid white;
+    
+}
+
+.output .operadoresAntes {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.output .operadoresAtuais {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+

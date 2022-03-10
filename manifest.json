@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "Bres Calculator V1",
+    "description": "Versão teste com objetivo de aprendizado - Bres Calculator - By Elizeu Conde",
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "calc.png" 
+    }
+}
